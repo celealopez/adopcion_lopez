@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body{
+    background-color: #fddfdb;
+    font-family: 'Jost', sans-serif;
+    }
+.logo{
+     display: flex;
+        
+    
+}
+h1{
+    text-align: center;
+    padding: 1rem;
+    font-size: 30px;
+    font-family: 'Jost', sans-serif;
+    justify-content: center;
+    
+    
+    }
+h2{
+    text-align: center;
+    padding: .5rem;
+    font-size: 25px;
+    font-family: 'Jost', sans-serif;
+}
+
+nav{
+    
+    background-color: #c85b37;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    flex-wrap: nowrap;
+    
+    
+    
+}
+
+#logo{
+    width: 100px;
+    justify-content: flex-start;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+li{
+    display: flex;
+
+    flex-wrap: nowrap;
+}
+a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 0px 5px;
+    padding: 5px;
+    color: white;
+    border: solid 1px white;
+    border-radius: 10px 0px;
+    background-color: #c85b37;
+}
+a:hover{
+    background-color: white;
+    color: brown;
+}
+.primeraParte{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+p{
+    font-size: 16px;
+    text-align: center;
+    padding: 50px;
+    
+    
+} 
+.pinicio{
+    background-color: #f3a48a;
+    border-radius: 50px 0px;
+    margin: 20px;
+    
+}
+#primeraFoto{
+    margin: 40px 20px;
+}
+
+.registroFeliz{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+  
+}
+
+
+.stabla{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#tabla{
+    width: 1000px;
+    margin: 0px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-style: hidden ;
+    
+}
+th{
+    margin: 50px;
+    padding: 50px;
+    color: brown;
+}
+
+#redes{
+    width: 50px;
+}
+#nosotros{
+    width: 60%;
+   margin: 30px; 
+}
+.gatitos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+
+}
+.dosprimeras{
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+    
+}
+.caja{
+    background-color: rgb(247, 171, 152);
+    padding: 30px;
+    margin: 50px;
+    border-radius: 20px 0px;
+}
+.caja:hover{
+    background-color: #c85b37;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f3a48a ;
+    text-align: center;
+    align-items: center;
+    margin: 0px 400px ;
+    border-radius: 30px 0;
+}
+form{
+    background-color: #f3a48a ;
+    border-radius: 30px 0;
+    padding: 20px;
+}
+input,select,textarea{
+    background-color: #fddfdb;
+    
+}
+.donar{
+    display: flex;
+    flex-direction: row;
+    
+}
+#muchasgracias{
+    margin: 20px;
+}
+#donacion{
+    background-color: #f3a48a;
+    border-radius: 50px 0px;
+    margin: 20px;
+    
+    padding-top: 20px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    margin: ;
+}
+#check{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    
+    .checkbtn{
+        display: flex;
+
+    }
+   ul{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    
+    
+    background:#f02e15;
+    opacity: .9;
+    top: 250px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+   }
+   nav ul li{
+    display: block;
+    
+    
+
+   }
+   a{
+    font-size: 20px;
+    
+   }
+   li a:hover , li a.active:hover{
+    
+    background: none;
+    height: 100px;
+   }
+   #check:checked ~ ul{
+    right: 0;
+   }
+}
